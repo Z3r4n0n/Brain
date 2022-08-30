@@ -29,6 +29,7 @@
 #========================================================================
 # SCRIPT USED FOR WIRING ALL COMPONENTS
 #========================================================================
+
 import sys
 sys.path.append('.')
 
@@ -44,6 +45,10 @@ from src.hardware.serialhandler.SerialHandlerProcess        import SerialHandler
 # utility imports
 from src.utils.camerastreamer.CameraStreamerProcess         import CameraStreamerProcess
 from src.utils.remotecontrol.RemoteControlReceiverProcess   import RemoteControlReceiverProcess
+
+
+print("Unsere Main läuft")
+
 
 # =============================== CONFIG =================================================
 enableStream        =  True
