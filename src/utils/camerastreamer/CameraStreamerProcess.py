@@ -75,7 +75,7 @@ class CameraStreamerProcess(WorkerProcess):
     def _init_socket(self):
         """Initialize the socket client. 
         """
-        self.serverIp   =  '192.168.1.121' # PC ip
+        self.serverIp   =  '192.168.0.120' # PC ip
         self.port       =  2244            # com port
 
         self.client_socket = socket.socket()
@@ -89,6 +89,7 @@ class CameraStreamerProcess(WorkerProcess):
                     self.connection = self.client_socket.makefile('wb') 
                 except ConnectionRefusedError as error:
                     time.sleep(0.5)
+                    print("Connection Refused")
                     pass
         except KeyboardInterrupt:
             self._blocker.set()

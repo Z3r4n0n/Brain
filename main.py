@@ -52,7 +52,7 @@ print("Unsere Main läuft")
 
 # =============================== CONFIG =================================================
 enableStream        =  True
-enableCameraSpoof   =  False 
+enableCameraSpoof   =  True
 enableRc            =  True
 
 # =============================== INITIALIZING PROCESSES =================================
